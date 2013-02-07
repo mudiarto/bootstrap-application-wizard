@@ -789,6 +789,12 @@
 			return this;
 		},
 
+        visitCards: function() {
+			this.log("enabling all nav cards");
+			this.eachCard(function(i,card){card.markVisited();});
+			return this;
+		},
+
 		enableCards: function() {
 			this.log("enabling all nav cards");
 			this.eachCard(function(i,card){card.enable();});
